@@ -83,7 +83,7 @@ public class FunctionUtility {
 //                        dataRow.createCell(1).setCellValue(data[1]);
         }
 
-        try (FileOutputStream fileOut = new FileOutputStream("C:\\Users\\dk115455\\OneDrive - bahwancybertek.com\\Desktop\\tricentis-web-app.XLSX")) {
+        try (FileOutputStream fileOut = new FileOutputStream("./tricentis-web-app.XLSX")) {
             workbook.write(fileOut);
         } catch (IOException e) {
             e.printStackTrace();
@@ -93,7 +93,7 @@ public class FunctionUtility {
 
     @DataProvider(name="logindata")
     public Object[][] testDataExample(){
-        ExtractData config = new ExtractData("C:\\Users\\dk115455\\OneDrive - bahwancybertek.com\\Desktop\\tricentis-web-app.XLSX");
+        ExtractData config = new ExtractData("./tricentis-web-app.XLSX");
         Object[][] login_credentials = new Object[1][2];
 
             login_credentials[0][0] = config.getData(0, 1, 3);
@@ -109,7 +109,7 @@ public class FunctionUtility {
         Workbook workbook = null;
         try {
             // Open the existing Excel file
-            fileIn = new FileInputStream("C:\\Users\\dk115455\\OneDrive - bahwancybertek.com\\Desktop\\tricentis-web-app.XLSX");
+            fileIn = new FileInputStream("./tricentis-web-app.XLSX");
             workbook = new XSSFWorkbook(fileIn);
             Sheet sheet = workbook.getSheetAt(0);
 
@@ -133,7 +133,7 @@ public class FunctionUtility {
             }
 
             // Write changes back to the Excel file
-            fileOut = new FileOutputStream("C:\\Users\\dk115455\\OneDrive - bahwancybertek.com\\Desktop\\tricentis-web-app.XLSX");
+            fileOut = new FileOutputStream("./tricentis-web-app.XLSX");
             workbook.write(fileOut);
         } catch (IOException e) {
             e.printStackTrace();
