@@ -24,8 +24,6 @@ public class TestRunner {
         Login.loginMethod(emailid,password);
     }
 
-
-
     @Test(priority = 3)
     public void movetodigitaldownload(){
         DigitalDownloads.digitalDownloads();
