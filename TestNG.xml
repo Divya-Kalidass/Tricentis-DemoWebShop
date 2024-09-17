@@ -7,7 +7,7 @@
                     <include name='registerMethod'/>
                     <include name="loginMethod"/>
                     <include name="movetodigitaldownload"/>
-
+                    <include name="enterBillingAddress"/>
                 </methods>
             </class>
         </classes>
