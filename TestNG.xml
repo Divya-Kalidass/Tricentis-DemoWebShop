@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite_1" parallel="methods" thread-count="1">
-    <test name="['Test _1']">
+    <test name="["['Test _1']"]">
         <classes>
-            <class name='demo.web.shop'>
+            <class name='demo.web'>
                 <methods>
                     <include name='registerMethod'/>
                 </methods>
