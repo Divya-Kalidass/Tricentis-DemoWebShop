@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <suite name="Suite_1" parallel="methods" thread-count="1">
     <listeners>
-        <listener class-name="demo.web.shop.TestResultListener3.java"/>
+        <listener class-name="demo.web.shop.TestResultListener3"/>
     </listeners>
     
         <test name="Test _1">
