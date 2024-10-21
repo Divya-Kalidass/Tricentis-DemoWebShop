@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite_1" parallel="methods" thread-count="1">
-    <test name="["['Test _1']"]">
-        <classes>
-            <class name='demo.web.shop'>
+    <suite name="Suite_1" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="demo.web.shop.TestResultListener3.java"/>
+    </listeners>
+    
+        <test name="Test _1">
+            <classes>
+                <class name='demo.web.shop'>
                 <methods>
                     <include name='registerMethod'/>
                 </methods>
             </class>
         </classes>
-    </test>
-</suite>
+        </test>
+    </suite>
+    
