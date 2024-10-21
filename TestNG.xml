@@ -2,7 +2,7 @@
 <suite name="Suite_1" parallel="methods" thread-count="1">
     <test name="["['Test _1']"]">
         <classes>
-            <class name='demo.web'>
+            <class name='demo.web.shop'>
                 <methods>
                     <include name='registerMethod'/>
                 </methods>
