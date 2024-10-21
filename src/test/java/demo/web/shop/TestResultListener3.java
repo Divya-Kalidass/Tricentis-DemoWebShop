@@ -1,6 +1,6 @@
 
 
-    package demo.web.shop
+    package 
 
     import org.testng.ITestContext;
     import org.testng.ITestListener;
